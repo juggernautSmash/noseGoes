@@ -4,7 +4,7 @@ module.exports = app =>{
 
         // get all list items
     app.get('/lists', (req, res) => {
-        Todo.findall()
+        Todo.findAll()
         .then(tasks => {
             res.json(tasks)
         .catch(e => console.log(e))})
