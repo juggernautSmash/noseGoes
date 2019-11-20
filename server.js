@@ -7,6 +7,7 @@ app.use(express.static(join(__dirname, 'public')))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+require('dotenv').config()
 require('./routes')(app)
 
 // Database
